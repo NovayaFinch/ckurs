@@ -33,8 +33,8 @@ int strend(const char* s, const char* t) {
 }
 
 
-char* strchr(const char* s, int c) {
-  const char* last = NULL;
+char *strchr(const char* s, int c) {
+  const char* last = 0;
   int length = 0;
 
   for(int i = 0;; i++) {
@@ -49,8 +49,8 @@ char* strchr(const char* s, int c) {
   return (char*)last;
 }
 
-char* strstr(const char* s, const char* t) {
-  char* result = NULL;
+char *strstr(const char* s, const char* t) {
+  char* result = 0;
   int t_length = 0;
   int s_length = 0;
   int s_iterator = 0;
